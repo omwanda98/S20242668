@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Welcome to Our Real Estate Agency</h1>
+        <p>Your dream property is just a click away.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Mortgage Calculator -->
+        <section id="mortgage-calculator" class="section">
+            <h2>Mortgage Calculator</h2>
+            <form id="calculator-form">
+                <label>Loan Amount ($):</label>
+                <input type="number" id="loan-amount" required>
+                
+                <label>Annual Interest Rate (%):</label>
+                <input type="number" id="interest-rate" step="0.1" required>
+                
+                <label>Loan Term (Years):</label>
+                <input type="number" id="loan-term" required>
+                
+                <button type="button" onclick="calculateMortgage()">Calculate</button>
+                <p id="monthly-payment"></p>
+            </form>
+        </section>
+
+        <!-- Property Viewing Form -->
+        <section id="property-viewing" class="section">
+            <h2>Request Property Viewing</h2>
+            <form id="viewing-form">
+                <label>Name:</label>
+                <input type="text" id="name" required>
+
+                <label>Email:</label>
+                <input type="email" id="email" required>
+
+                <label>Preferred Date:</label>
+                <input type="date" id="date" required>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Real Estate Agency. All rights reserved. S20242668@sistc.edu.au</p>
+    </footer>
+
+</body>
+</html>
